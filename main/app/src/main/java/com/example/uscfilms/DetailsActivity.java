@@ -199,7 +199,7 @@ public class DetailsActivity extends AppCompatActivity implements YouTubePlayer.
         YouTubePlayerFragment youTubePlayerFragment = (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_fragment);
         //layout.addView(youTubePlayerView);
         //getLifecycle().addObserver(youTubePlayerView);
-        youTubePlayerFragment.initialize("AIzaSyDGMlmVQSG88zBvNkFpgmkwEcQdQJded4Y",this);
+        youTubePlayerFragment.initialize("",this);
 
         /*youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
             @Override
