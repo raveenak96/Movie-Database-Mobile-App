@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_result_card"
+        android:elevation="10dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="7dp"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="7dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:id="@+id/search_result_image"
+            android:foreground="@drawable/card_gradient" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:backgroundTint="@color/transparent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_result_media_type"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:paddingRight="7dp"
+                android:backgroundTint="@color/transparent"
+                android:textStyle="bold"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_result_date"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/transparent"
+                android:textStyle="bold"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.5"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/transparent"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_result_star"
+                android:textColor="@color/yellow"
+                android:backgroundTint="@color/transparent"
+                android:textSize="18sp"
+                android:paddingRight="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_result_rating"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/transparent"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:shadowColor="@color/black"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="0.5"/>
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/search_result_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/transparent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingLeft="15dp"
+                android:paddingBottom="25dp"
+
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
